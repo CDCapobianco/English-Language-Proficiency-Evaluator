@@ -11,13 +11,13 @@ It includes the full_text of each essay, identified by a unique text_id. The ess
 
 # Data Cleaning and Preprocessing
 
-The dataset was given to many different models so many different preprocessing pipelines were considered.
+The dataset was fed to many different models so different preprocessing pipelines were considered.
 
-For ML models the data was tokenized, stripped of punctuation and encoded with TF-IDF algorithm.
+For ML models, the data was tokenized, stripped of punctuation and encoded with TF-IDF algorithm.
 For the LSTM neural network, a text vectorization layer  an embedding matrix from spaCy en_core_web_large vocabulary was built 
+For the BERT model, data was fed to the AutoTokenizer of the corresponding BERT architecture
 
-
-Lemmatization and stop words removal was considered but not included in the final version because, considering the task, we can get a more precise evaluation about verb tenses and grammar use from those words in their original form.
+Lemmatization and stop words removal were considered but not included in the final version because, considering the task, we could get a better evaluation about verb tenses and grammar use by keeping the texts in their original form.
 
 # The Model
 
