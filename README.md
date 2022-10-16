@@ -31,8 +31,12 @@ Test size is 20% of the dataset
 
 | Model  | Validation Performance (Mean Absolute Error) | Validation Performance (Mean Squared Error) |
 | ------------- | ------------- | ------------- |
-| Linear Regression  | 0.5877873583883393  | 0.5478169927430634  |
-| SVM Regressor| 0.44030738436414085  | 0.3035907313556448 |
-| XGBoost | 0.4459536600999776 | 0.309199442458324 |
+| Linear Regression  | 0.5877  | 0.5478  |
+| SVM Regressor| 0.4403  | 0.3035 |
+| XGBoost | 0.4459 | 0.3091 |
 | LSTM NN | 0.0141 | 4.6755e-04 |
 | BERT | 0.2608  | 0.4026 |
+
+
+
+BERT model requires a reasonable amount of RAM/VRAM and/or a lot of time to be properly fine-tuned, so we could probably get a much better result from it with the right amount of time and space resources.
